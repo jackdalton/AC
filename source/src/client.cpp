@@ -14,6 +14,21 @@ extern int searchlan;
 
 int getclientnum() { return player1 ? player1->clientnum : -1; }
 
+//bool autoshoot_on = true;
+//
+//void autoshoot(char *status)
+//{
+//    if (strcmp(status, "on")) {
+//        autoshoot_on = true;
+//    } else if (strcmp(status, "off")) {
+//        autoshoot_on = false;
+//    } else {
+//        conoutf("Error: Unrecognized option for autoshoot");
+//    }
+//}
+//
+//COMMAND(autoshoot, "c");
+
 bool multiplayer(bool msg)
 {
     // check not correct on listen server?

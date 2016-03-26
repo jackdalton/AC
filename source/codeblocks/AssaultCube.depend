@@ -1,0 +1,404 @@
+# depslib dependency file v1.0
+1459011983 source:/home/jack/Projects/AC/source/src/cube.h
+	"platform.h"
+	"tools.h"
+	"geom.h"
+	"model.h"
+	"protocol.h"
+	"sound.h"
+	"weapon.h"
+	"entity.h"
+	"world.h"
+	"i18n.h"
+	"command.h"
+	"varray.h"
+	"vote.h"
+	"console.h"
+	"protos.h"
+
+1459011983 /home/jack/Projects/AC/source/src/platform.h
+	<string.h>
+	<stdlib.h>
+	<stdio.h>
+	<stdarg.h>
+	<ctype.h>
+	<time.h>
+	<limits.h>
+	<math.h>
+	<new>
+	<signal.h>
+	<new.h>
+	<zlib.h>
+	<enet/enet.h>
+	"windows.h"
+	<tlhelp32.h>
+	<Dbghelp.h>
+	<SDL.h>
+	<SDL_image.h>
+	<utf8.h>
+	<SDL_opengl.h>
+	"GL/glext.h"
+	"INTL/libintl.h"
+	"OpenAL/al.h"
+	"OpenAL/alc.h"
+	"Vorbis/vorbisfile.h"
+	<libintl.h>
+	"AL/al.h"
+	"AL/alc.h"
+	"vorbis/vorbisfile.h"
+	<setjmp.h>
+	"curl/curl.h"
+
+1459011983 /home/jack/Projects/AC/source/include/zlib.h
+	"zconf.h"
+
+1459011983 /home/jack/Projects/AC/source/include/zconf.h
+	<windows.h>
+	<sys/types.h>
+	<unistd.h>
+	<unixio.h>
+
+1459011983 /home/jack/Projects/AC/source/enet/include/enet/enet.h
+	<stdlib.h>
+	"enet/win32.h"
+	"enet/unix.h"
+	"enet/types.h"
+	"enet/protocol.h"
+	"enet/list.h"
+	"enet/callbacks.h"
+
+1459011983 /home/jack/Projects/AC/source/enet/include/enet/win32.h
+	<stdlib.h>
+	<winsock2.h>
+
+1459011983 /home/jack/Projects/AC/source/enet/include/enet/unix.h
+	<stdlib.h>
+	<sys/time.h>
+	<sys/types.h>
+	<netinet/in.h>
+	<unistd.h>
+
+1459011983 /home/jack/Projects/AC/source/enet/include/enet/types.h
+
+1459011983 /home/jack/Projects/AC/source/enet/include/enet/protocol.h
+	"enet/types.h"
+
+1459011983 /home/jack/Projects/AC/source/enet/include/enet/list.h
+	<stdlib.h>
+
+1459011983 /home/jack/Projects/AC/source/enet/include/enet/callbacks.h
+	<stdlib.h>
+
+1459011983 /home/jack/Projects/AC/source/include/SDL.h
+	"SDL_main.h"
+	"SDL_stdinc.h"
+	"SDL_audio.h"
+	"SDL_cdrom.h"
+	"SDL_cpuinfo.h"
+	"SDL_endian.h"
+	"SDL_error.h"
+	"SDL_events.h"
+	"SDL_loadso.h"
+	"SDL_mutex.h"
+	"SDL_rwops.h"
+	"SDL_thread.h"
+	"SDL_timer.h"
+	"SDL_video.h"
+	"SDL_version.h"
+	"begin_code.h"
+	"close_code.h"
+
+1459011983 /home/jack/Projects/AC/source/include/SDL_main.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+	"begin_code.h"
+	"close_code.h"
+
+1459011983 /home/jack/Projects/AC/source/include/SDL_stdinc.h
+	"SDL_config.h"
+	<sys/types.h>
+	<stdio.h>
+	<stdlib.h>
+	<stddef.h>
+	<stdarg.h>
+	<stdlib.h>
+	<malloc.h>
+	<stddef.h>
+	<stdarg.h>
+	<memory.h>
+	<string.h>
+	<strings.h>
+	<inttypes.h>
+	<stdint.h>
+	<ctype.h>
+	<iconv.h>
+	"begin_code.h"
+	<alloca.h>
+	<malloc.h>
+	<malloc.h>
+	<malloc.h>
+	<stdlib.h>
+	"close_code.h"
+
+1459011983 /home/jack/Projects/AC/source/include/SDL_config.h
+	"SDL_platform.h"
+	"SDL_config_dreamcast.h"
+	"SDL_config_macos.h"
+	"SDL_config_macosx.h"
+	"SDL_config_symbian.h"
+	"SDL_config_win32.h"
+	"SDL_config_os2.h"
+	"SDL_config_minimal.h"
+
+1459011983 /home/jack/Projects/AC/source/include/SDL_platform.h
+
+1459011983 /home/jack/Projects/AC/source/include/SDL_config_macosx.h
+	"SDL_platform.h"
+	<AvailabilityMacros.h>
+
+1459011983 /home/jack/Projects/AC/source/include/SDL_config_win32.h
+	"SDL_platform.h"
+
+1459011983 /home/jack/Projects/AC/source/include/begin_code.h
+
+1459011983 /home/jack/Projects/AC/source/include/close_code.h
+
+1459011983 /home/jack/Projects/AC/source/include/SDL_audio.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_endian.h"
+	"SDL_mutex.h"
+	"SDL_thread.h"
+	"SDL_rwops.h"
+	"begin_code.h"
+	"close_code.h"
+
+1459011983 /home/jack/Projects/AC/source/include/SDL_error.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1459011983 /home/jack/Projects/AC/source/include/SDL_endian.h
+	"SDL_stdinc.h"
+	<endian.h>
+	"begin_code.h"
+	"close_code.h"
+
+1459011983 /home/jack/Projects/AC/source/include/SDL_mutex.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1459011983 /home/jack/Projects/AC/source/include/SDL_thread.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_mutex.h"
+	"begin_code.h"
+	<process.h>
+	"close_code.h"
+
+1459011983 /home/jack/Projects/AC/source/include/SDL_rwops.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1459011983 /home/jack/Projects/AC/source/include/SDL_cdrom.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1459011983 /home/jack/Projects/AC/source/include/SDL_cpuinfo.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1459011983 /home/jack/Projects/AC/source/include/SDL_events.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_active.h"
+	"SDL_keyboard.h"
+	"SDL_mouse.h"
+	"SDL_joystick.h"
+	"SDL_quit.h"
+	"begin_code.h"
+	"close_code.h"
+
+1459011983 /home/jack/Projects/AC/source/include/SDL_active.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1459011983 /home/jack/Projects/AC/source/include/SDL_keyboard.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_keysym.h"
+	"begin_code.h"
+	"close_code.h"
+
+1459011983 /home/jack/Projects/AC/source/include/SDL_keysym.h
+
+1459011983 /home/jack/Projects/AC/source/include/SDL_mouse.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1459011983 /home/jack/Projects/AC/source/include/SDL_video.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_rwops.h"
+	"begin_code.h"
+	"close_code.h"
+
+1459011983 /home/jack/Projects/AC/source/include/SDL_joystick.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1459011983 /home/jack/Projects/AC/source/include/SDL_quit.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+
+1459011983 /home/jack/Projects/AC/source/include/SDL_loadso.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1459011983 /home/jack/Projects/AC/source/include/SDL_timer.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1459011983 /home/jack/Projects/AC/source/include/SDL_version.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1459011983 /home/jack/Projects/AC/source/include/SDL_image.h
+	"SDL.h"
+	"SDL_version.h"
+	"begin_code.h"
+	"close_code.h"
+
+1459011983 /home/jack/Projects/AC/source/include/utf8.h
+	"utf8/checked.h"
+	"utf8/unchecked.h"
+
+1459011983 /home/jack/Projects/AC/source/include/utf8/checked.h
+	"core.h"
+	<stdexcept>
+
+1459011983 /home/jack/Projects/AC/source/include/utf8/core.h
+	<iterator>
+
+1459011983 /home/jack/Projects/AC/source/include/utf8/unchecked.h
+	"core.h"
+
+1459011983 /home/jack/Projects/AC/source/include/SDL_opengl.h
+	"SDL_config.h"
+	<windows.h>
+	<OpenGL/gl.h>
+	<OpenGL/glu.h>
+	<gl.h>
+	<glu.h>
+	<GL/gl.h>
+	<GL/glu.h>
+	<windows.h>
+	<stddef.h>
+
+1459011983 /home/jack/Projects/AC/source/include/GL/glext.h
+	<windows.h>
+	<stddef.h>
+
+1459011983 /home/jack/Projects/AC/source/include/libintl.h
+	<locale.h>
+	<stdio.h>
+	<stddef.h>
+	<stdarg.h>
+	<varargs.h>
+
+1459011983 /home/jack/Projects/AC/source/include/AL/al.h
+
+1459011983 /home/jack/Projects/AC/source/include/AL/alc.h
+
+1459011983 /home/jack/Projects/AC/source/include/vorbis/vorbisfile.h
+	<stdio.h>
+	"codec.h"
+
+1459011983 /home/jack/Projects/AC/source/include/vorbis/codec.h
+	<ogg/ogg.h>
+
+1459011983 /home/jack/Projects/AC/source/include/ogg/ogg.h
+	<ogg/os_types.h>
+
+1459011983 /home/jack/Projects/AC/source/include/ogg/os_types.h
+	<_G_config.h>
+	<sys/types.h>
+	<sys/types.h>
+	<inttypes.h>
+	<sys/types.h>
+	<ogg/config_types.h>
+
+1459011983 /home/jack/Projects/AC/source/include/curl/curl.h
+	"curlver.h"
+	<stdio.h>
+	<limits.h>
+	<types.h>
+	<time.h>
+	<sys/types.h>
+	<time.h>
+	<winsock2.h>
+	<ws2tcpip.h>
+	<sys/select.h>
+	<sys/socket.h>
+	<sys/time.h>
+	<sys/types.h>
+	<support/SupportDefs.h>
+	"easy.h"
+	"multi.h"
+
+1459011983 /home/jack/Projects/AC/source/include/curl/curlver.h
+
+1459011983 /home/jack/Projects/AC/source/include/curl/easy.h
+
+1459011983 /home/jack/Projects/AC/source/include/curl/multi.h
+	"curl.h"
+
+1459011983 /home/jack/Projects/AC/source/src/tools.h
+	<iostream>
+
+1459011983 /home/jack/Projects/AC/source/src/geom.h
+
+1459011983 /home/jack/Projects/AC/source/src/model.h
+
+1459011983 /home/jack/Projects/AC/source/src/protocol.h
+
+1459011983 /home/jack/Projects/AC/source/src/sound.h
+
+1459011983 /home/jack/Projects/AC/source/src/weapon.h
+
+1459011983 /home/jack/Projects/AC/source/src/entity.h
+
+1459011983 /home/jack/Projects/AC/source/src/world.h
+
+1459011983 /home/jack/Projects/AC/source/src/i18n.h
+
+1459011983 /home/jack/Projects/AC/source/src/command.h
+
+1459011983 /home/jack/Projects/AC/source/src/varray.h
+
+1459011983 /home/jack/Projects/AC/source/src/vote.h
+
+1459011983 /home/jack/Projects/AC/source/src/console.h
+
+1459011983 /home/jack/Projects/AC/source/src/protos.h
+

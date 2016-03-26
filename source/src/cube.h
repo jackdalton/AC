@@ -29,7 +29,6 @@
    SDL_AC_BUTTON_LEFT = -1
  };
 #endif
-
 extern sqr *world, *wmip[];             // map data, the mips are sequential 2D arrays in memory
 extern header hdr;                      // current map header
 extern int sfactor, ssize;              // ssize = 2^sfactor

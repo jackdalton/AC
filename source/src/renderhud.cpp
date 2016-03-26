@@ -859,11 +859,6 @@ void gl_drawhud(int w, int h, int curfps, int nquads, int curvert, bool underwat
     glEnable(GL_TEXTURE_2D);
 
     playerent *targetplayer = playerincrosshair();
-    if (!!targetplayer && !isteam(p->team, targetplayer->team)) { // CHEAT: shoot if enemy is under the crosshair
-        p->attacking = true;
-    } else {
-        p->attacking = false;
-    }
     bool menu = menuvisible();
     bool command = getcurcommand() ? true : false;
     bool reloading = lastmillis < p->weaponsel->reloading + p->weaponsel->info.reloadtime;
@@ -1134,6 +1129,27 @@ void gl_drawhud(int w, int h, int curfps, int nquads, int curvert, bool underwat
     glEnable(GL_DEPTH_TEST);
 
     glMatrixMode(GL_MODELVIEW);
+
+//    if (!!targetplayer && !isteam(p->team, targetplayer->team)) { // CHEAT: shoot if enemy is under the crosshair
+//        if (strcmp(p->weaponsel->info.modelname, "sniper") && !p->scoping) {
+//            return;
+//        } else {
+//            p->attacking = true;
+//            return;
+//        }
+//        conoutf(p->weaponsel->info.modelname);
+//    } else {
+//        p->attacking = false;
+//        return;
+//    }
+
+    if (!!targetplayer && !isteam(p->team, targetplayer->team)) { // CHEAT: shoot if enemy is under the crosshair
+        p->attacking = true;
+        return;
+    } else {
+        p->attacking = false;
+        return;
+    }
 }
 
 void loadingscreen(const char *fmt, ...)
