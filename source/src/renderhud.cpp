@@ -637,7 +637,7 @@ void drawradar_vicinity(playerent *p, int w, int h)
     loopv(players) // other players
     {
         playerent *pl = players[i];
-        if(!pl || pl==p || /*!isteam(p->team, pl->team) ||*/ !team_isactive(pl->team)) continue; // show enemies as well
+        if(!pl || pl==p || /*!isteam(p->team, pl->team) ||*/ !team_isactive(pl->team)) continue; // CHEAT: show enemies on the radar as well
         vec rtmp = vec(pl->o).sub(p->o);
         bool isok = rtmp.magnitude() < d2s;
         if(isok)
@@ -859,6 +859,11 @@ void gl_drawhud(int w, int h, int curfps, int nquads, int curvert, bool underwat
     glEnable(GL_TEXTURE_2D);
 
     playerent *targetplayer = playerincrosshair();
+    if (!!targetplayer && !isteam(p->team, targetplayer->team)) { // CHEAT: shoot if enemy is under the crosshair
+        p->attacking = true;
+    } else {
+        p->attacking = false;
+    }
     bool menu = menuvisible();
     bool command = getcurcommand() ? true : false;
     bool reloading = lastmillis < p->weaponsel->reloading + p->weaponsel->info.reloadtime;
