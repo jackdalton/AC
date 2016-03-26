@@ -637,7 +637,7 @@ void drawradar_vicinity(playerent *p, int w, int h)
     loopv(players) // other players
     {
         playerent *pl = players[i];
-        if(!pl || pl==p || !isteam(p->team, pl->team) || !team_isactive(pl->team)) continue;
+        if(!pl || pl==p || /*!isteam(p->team, pl->team) ||*/ !team_isactive(pl->team)) continue; // show enemies as well
         vec rtmp = vec(pl->o).sub(p->o);
         bool isok = rtmp.magnitude() < d2s;
         if(isok)
